@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Cliente" ALTER COLUMN "cpf" SET DATA TYPE CHAR(30);
