@@ -1,0 +1,740 @@
+{
+	"info": {
+		"_postman_id": "d9bb2857-1128-4d08-8cc7-19f3486ee4ba",
+		"name": "Patitas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32738840"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "CriarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "Theo",
+									"type": "text"
+								},
+								{
+									"key": "cpf",
+									"value": "12345678919",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "theo3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "rua",
+									"value": "sei la",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CriarProduto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tipo",
+									"value": "agua",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/produto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"produto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CriarFidelidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "frete",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "cupom",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "premios",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "cartao",
+									"value": "jjjjjjjjjjf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/fidelidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"fidelidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClienteUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "numero",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AdicionarRelaçãoFidelidade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fidelidadeId",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/addfcliente/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"addfcliente",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoverRelaçãoFidelidade Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fidelidadeId",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/rmvfcliente/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"rmvfcliente",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProdutoUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "numero",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/produto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"produto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AdicionarRelaçãoCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "clienteId",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/addcliente/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"addcliente",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoverRelaçãoCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "clienteId",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/rmvcliente/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"rmvcliente",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FidelidadeUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "numero",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/fidelidade/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"fidelidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PegarClientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "Theo",
+									"type": "text"
+								},
+								{
+									"key": "cpf",
+									"value": "12345678911",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "theo1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "rua",
+									"value": "sei la",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PegarProdutos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "Theo",
+									"type": "text"
+								},
+								{
+									"key": "cpf",
+									"value": "12345678911",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "theo1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "rua",
+									"value": "sei la",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PegarFidelidades",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "Theo",
+									"type": "text"
+								},
+								{
+									"key": "cpf",
+									"value": "12345678911",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "theo1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "rua",
+									"value": "sei la",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "compra",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "produto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/fidelidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"fidelidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PegarCliente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3333/cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PegarProduto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3333/produto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"produto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PegarFidelidade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3333/fidelidade/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"fidelidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ApagarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3333/cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ApagarProdutos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3333/produto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"produto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ApagarFidelidade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3333/fidelidade/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"fidelidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
